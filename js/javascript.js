@@ -10,7 +10,6 @@ let userKm = prompt('Quanti KM hai percorso (usare i . se in decimale)?');
 let prezzoScont = 0;
 
 let prezzoTotale = userKm * prezzoalKm;
-prezzoTotale = prezzoTotale.toFixed(2)
 
 let outputElement = document.getElementById('biglietto-treno-prezzo');
 
@@ -23,5 +22,6 @@ if (userEtà >= etaOld) {
     prezzoScont = prezzoScont.toFixed(2)
     outputElement.innerHTML = ('Il prezzo del suo biglietto è di' + '  ' + prezzoScont);
 } else {
+    prezzoTotale = prezzoTotale.toFixed(2)
     outputElement.innerHTML = ('Il prezzo del suo biglietto è di' + ' ' + prezzoTotale);
 }
